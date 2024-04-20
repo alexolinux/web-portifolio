@@ -1,7 +1,8 @@
 # node-portfolio
 
-Portfolio web in Node + Docker
 ------------------------------
+
+Portfolio web in Node + Docker
 
 ## About This
 
@@ -19,9 +20,19 @@ Create `.env` file based on `.env_sample`. It is required to set up your MongoDB
 
 ### NodeJS
 
-* Start Project
+Start Project
 
-HERE
+```shell
+npx create-next-app@latest
+```
+
+Install Libs
+
+`cd app`
+
+```shell
+npm install saas
+```
 
 ## Containerize Project
 
