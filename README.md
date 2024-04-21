@@ -64,11 +64,20 @@ Created a `Dockerfile` to app deployment.
   # Install `package.json` dependencies.
   npm install
 
+  # Install package globally
+  npm install -g <package>
+
   # Uninstall package
   npm un <package>
 
   # Update package
   npm up <package>
+
+  # List node packages
+  npm ls
+
+  # List node specific package
+  npm ls <package>
 
   # List globally installed packages
   npm list -g --depth=0
