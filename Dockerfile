@@ -1,13 +1,15 @@
-FROM node:lts-alpine3.19
+FROM nginx:latest
 
-WORKDIR /usr/src/app
-COPY package*.json ./
+# Remove the default configuration file
+RUN rm /etc/nginx/conf.d/default.conf
 
-# Install Node.js dependencies
-RUN npm install
-COPY . .
+COPY app/nginx/*.conf /etc/nginx/conf.d/
+COPY app/nginx/alexmendes.work.gd.crt /etc/ssl/certs/
+COPY app/nginx/alexmendes.work.gd.key /etc/ssl/private/
+COPY app/src /usr/share/nginx/html/
 
-EXPOSE 3000
-USER node
+EXPOSE 80
+EXPOSE 443
 
-CMD ["npm", "start"]
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
