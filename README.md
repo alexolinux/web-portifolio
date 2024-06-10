@@ -1,8 +1,8 @@
-# node-portfolio
+# node-portifolio
 
 ------------------------------
 
-Portfolio web in Node + Docker
+Portifolio web in Node + Docker
 
 ## About This
 
@@ -43,7 +43,7 @@ Created a `Dockerfile` to app deployment.
 1. Build the image (customize to your desired `name:version`)
   
   ```shell
-  docker build --no-cache --progress plain -t node-portfolio:latest .
+  docker build --no-cache --progress plain -t web-portfolio:latest .
   ```
 
 2. Load the required `ENV` variables using `.env`, based on `.env_sample`
@@ -55,7 +55,7 @@ Created a `Dockerfile` to app deployment.
 3. UP/Running
 
   ```shell
-  docker run --rm -p 3000:3000 --name portfolio node-portfolio:latest
+  docker run --rm -p 3000:3000 --name portfolio web-portfolio:latest
   ```
 
 * Useful NodeJS Commands
