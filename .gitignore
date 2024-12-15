@@ -132,3 +132,4 @@ dist
 
 # HTTP SSL Keys
 **.key
+app/nginx/*.key
