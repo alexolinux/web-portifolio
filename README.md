@@ -1,12 +1,12 @@
-# web-portifolio
+# web-portfolio
 
 ------------------------------
 
-Portifolio web
+Portfolio web
 
 ## About This
 
-Portifolio Web. Containerized by using Docker.
+Portfolio Web. Containerized by using Docker.
 
 ## Containerize Project
 
